@@ -115,3 +115,12 @@ footer{
     background-color: rgb(89, 40, 136); /* Color de fondo */
     color: #ffffff;           /* Color del texto */
 }
+
+#volver{
+    font-family: "Revalia", sans-serif;
+    background-color: #000000;
+    color:white;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px ;
+}

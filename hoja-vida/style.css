@@ -60,3 +60,11 @@ hr{
    background:#ffbdd6;
    color:#000000;
 }
+#volver{
+    font-family: "Revalia", sans-serif;
+    background-color: #000000;
+    color:white;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px ;
+}
