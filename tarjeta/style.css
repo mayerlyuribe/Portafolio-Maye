@@ -1,0 +1,52 @@
+#tarjeta{
+    background-color: rgb(255, 238, 243);
+    width: 700px;
+    height: 900px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding-top: 60px;
+    
+}
+body{
+    background: #e1ddfa;
+    background: radial-gradient(circle, rgb(222, 217, 250) 0%, rgb(255, 199, 215) 100%);
+    padding-left: 30%;
+    margin: 0%;
+    padding-top: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom:60px;
+}
+
+#producto{
+    border-radius: 30px;
+    margin-left: 15%;
+}
+#producto:hover{
+  box-shadow: 0 10px 20px rgb(219, 191, 186);
+  transition: all 1s ease;   
+}
+#descripcion{
+    margin-left: 90px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#precio{
+    margin-left: 65px;
+    font-size: 50px;
+    width: 250px;
+}
+.btn-comprar{
+    background-color: rgb(255, 176, 176);
+    border-radius: 25px;
+    width: 300px;
+    height: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-style: none;
+}
+
+.btn-comprar:hover{
+  color: rgb(0, 0, 0) !important;
+  box-shadow: 0 4px 16px rgb(255, 161, 161);
+  transition: all 0.5s ease;
+}

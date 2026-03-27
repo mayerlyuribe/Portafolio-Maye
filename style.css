@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    font-family: "Revalia", sans-serif;
+    color: white;
+}
+#titulo{
+    font-size: 60px;
+    text-align: center;
+    background: #000000;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(130, 112, 195, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+#descripcion{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+
+}
+.tabla{
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.tarjeta {
+    background-color: #eff1ff;
+    color: black;
+    text-align: center;
+    height: 300px;
+    vertical-align: middle;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.25s, box-shadow 0.25s;
+    border: 1px solid #e0e0e0;
+}
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(49, 44, 145, 0.2);
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(135deg, #312c91, #7F77DD);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+.img{
+    width: 60px;
+}
+.btn{
+    font-family: "Revalia", sans-serif;
+    background-color: #312c91;
+    color:white;
+    width: 250px;
+    height: 40px;
+}
+#pie{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

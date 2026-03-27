@@ -1,0 +1,117 @@
+#header-derecha{
+    padding-right: 20px ;
+    background-color: rgb(229, 209, 252);
+    padding-left: 40px;
+    width: 50%;
+}
+
+#header-izquierda{
+    background-color: rgb(229, 209, 252);
+    text-align: right;
+    width: 50%;
+    padding-right: 40px;
+
+}
+#nav-pag{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(229, 209, 252);
+    font-size: 20px ;
+    text-align: right;
+    padding-top: 20px;
+}
+body{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#imagen{
+    width: 1000px;
+}
+#title{
+    color: rgb(89, 40, 136);
+    font-size: 49px;
+}
+.descrip-section{
+    width: 800px;
+    font-size: 20px;
+    height: 700px;
+}
+.btn{
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: rgb(209, 190, 230);
+    border:2px, outset;
+    border-radius: 20px;
+    border-color:rgb(89, 40, 136) ;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.section-center{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.imagen-secund{
+    width: 350px;
+    border-radius: 200px;
+}
+#descripcion{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.tarjeta{
+    background-color: rgb(224, 214, 236);
+    width: 400px;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20PX;
+    text-align: center;
+}
+
+#title-proyects{
+    color: rgb(78, 78, 78);
+    font-size: 49px;
+    text-align: center;
+
+}
+#seccion-proyectos{
+    text-align: center;
+    padding-left: 80px;
+
+}
+.img-proyecto{
+    width: 300px;
+    border-radius: 40px;
+}
+.proyect-name{
+    font-size: 25px;
+    font-weight: bold;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    color:white;
+    background-color: black;
+    padding-top: 30px;
+}
+#yio{
+    float: left;
+    padding-left:30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#proyect-link{
+    padding-right: 30px;
+}
+::selection {
+    background-color: rgb(89, 40, 136); /* Color de fondo */
+    color: #ffffff;           /* Color del texto */
+}
