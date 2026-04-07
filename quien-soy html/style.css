@@ -68,10 +68,9 @@ body{
 }
 .tarjeta{
     background-color: rgb(224, 214, 236);
-    width: 300px;
     border-radius: 40px;
     padding: 20px;
-    margin: 20px;
+    margin: 20PX;
     text-align: center;
 }
 
@@ -83,6 +82,8 @@ body{
 }
 #seccion-proyectos{
     text-align: center;
+    padding-left: 80px;
+
 }
 .img-proyecto{
     width: 300px;
