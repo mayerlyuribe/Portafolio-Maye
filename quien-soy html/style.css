@@ -69,9 +69,9 @@ body{
 .tarjeta{
     background-color: rgb(224, 214, 236);
     border-radius: 40px;
-    padding: 20px;
-    margin: 20PX;
     text-align: center;
+    border-spacing: 20px;
+
 }
 
 #title-proyects{
@@ -82,7 +82,7 @@ body{
 }
 #seccion-proyectos{
     text-align: center;
-    padding-left: 80px;
+    border-collapse: collapse;
 
 }
 .img-proyecto{
