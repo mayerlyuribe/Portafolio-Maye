@@ -25,32 +25,36 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #imagen{
-    width: 1000px;
+    width:400px;
+}
+#img-sect{
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
+    padding-bottom: 10px;
 }
 #title{
     color: rgb(89, 40, 136);
     font-size: 49px;
 }
 .descrip-section{
-    width: 800px;
     font-size: 20px;
-    height: 700px;
 }
 .btn{
-    padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     background-color: rgb(209, 190, 230);
-    border:2px, outset;
-    border-radius: 20px;
+    border:1px, outset;
+    border-radius: 10px;
     border-color:rgb(89, 40, 136) ;
     margin-top:20px;
     margin-bottom: 20px;
+    width: 150px;
+    height: 50px;
 }
 
 .section-center{
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-color: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
     text-align: center;
@@ -67,11 +71,18 @@ body{
     margin-right: 200px;
 }
 .tarjeta{
-    background-color: rgb(224, 214, 236);
-    border-radius: 40px;
+    border-radius: 10px;
     text-align: center;
-    border-spacing: 20px;
-
+    width: 20%;
+    margin:0 20px;
+}
+.tarjeta-content{
+    width: 90%;
+    background-color: rgb(224, 214, 236);
+    border-radius: 10px;
+}
+#seccion-proyectos{
+    margin: 5px 5%;
 }
 
 #title-proyects{
@@ -82,12 +93,10 @@ body{
 }
 #seccion-proyectos{
     text-align: center;
-    border-collapse: collapse;
-
 }
 .img-proyecto{
-    width: 300px;
-    border-radius: 40px;
+    width: 100%;
+    border-radius: 10px;
 }
 .proyect-name{
     font-size: 25px;
@@ -95,7 +104,7 @@ body{
 }
 footer{
     width: 100%;
-    text-align: center;
+    text-align: right;
     height: 100px;
     color:white;
     background-color: black;
@@ -108,7 +117,7 @@ footer{
     font-weight: bold;
 }
 #proyect-link{
-    padding-right: 30px;
+    padding-right: 150px;
 }
 ::selection {
     background-color: rgb(89, 40, 136); /* Color de fondo */
@@ -116,7 +125,6 @@ footer{
 }
 
 #volver{
-    font-family: "Revalia", sans-serif;
     background-color: #000000;
     color:white;
     width: 100px;
