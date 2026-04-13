@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="" href="Style.css">
-    <title>Document</title>
+    <title>Factura</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/invoice.png" type="image">
 </head>
 <body>
+        <a href="../index.html">
+            <button id = "volver"><--volver</button></a>
     <div class="box">
         <div class="left">
             <div class="uno">
@@ -18,7 +21,7 @@
                 </div>
                 <div id="titulo">
                     <h1 class="titulo1">COMPANY NAME</h1>
-                <p id="titulo2">BRANDING TAGLINE SPACE HERE</p>
+                    <p id="titulo2">BRANDING TAGLINE SPACE HERE</p>
                 </div>
             </div>
             <div class="dos">
@@ -36,7 +39,7 @@
             </div>
             <div class="tres">
                 <div id="numl">
-                    <p id="asg">#</p>
+                    <p>#</p>
                     <p>1</p>
                     <p>2</p>
                     <p>3</p>
@@ -78,23 +81,36 @@
                 <div>INVOICE</div>
             </div>
             <div id="invoice">
-                <p class="par11">INVOICE DATE</p>
-                <p class="par12">D1032018</p>
-                <p class="par11">DUE DATE</p>
-                <p class="par12">03122010</p>
-                <p class="par11">INVOICE #</p>
-                <p class="par12">34256</p>
+                <div>
+                    <p class="tit">INVOICE DATE</p>
+                    <p class = "datos">D1032018</p>
+                </div>
+                <div>
+                    <p class="tit">DUE DATE</p>
+                    <p class = "datos">03122010</p>
+                </div>
+                <div>
+                    <p class="tit">INVOICE #</p>
+                    <p class = "datos">34256</p>
+                </div>
             </div>
             <div class="qty">
-                    <p>Qty</p><p>Total</p>
-                    <p>3</p><p>$91.50</p>
-                    <p>1</p><p>$50.00</p>
-                    <p>5</p><p>$350.00</p>
-                    <p>2</p><p>$40.00</p>
+                <p>Qty</p><p>Total</p>
+                <p>3</p><p>$91.50</p>
+                <p>1</p><p>$50.00</p>
+                <p>5</p><p>$350.00</p>
+                <p>2</p><p>$40.00</p>
             </div>
-        <div id="prices">
-            <p></p>
-        </div>
+            <div id="prices">
+                <p>$50.78</p>
+                <p>$12.00</p>
+                <p>$83.78</p>
+                <p>$15.00</p>
+            </div>
+            <div id="tot">
+                <strong><p>$592.28</p></strong>
+                <strong><p>Singature</p></strong>
+            </div>
     </div>
 </body>
 </html>
