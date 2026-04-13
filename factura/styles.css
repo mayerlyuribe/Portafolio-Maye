@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 218, 219);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box{
+    width: 35%;
+    min-height: 90vh;
+    margin: auto;
+    padding-top: 2.5%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+}
+*/columna izquierda*/
+.left{
+    background-color: rgb(255, 255, 255);
+}
+.uno{
+    background-color: rgb(190, 190, 190);
+    display: grid;
+    width: 100%;
+    height: 10%;
+    grid-template-columns: 20% 80%;
+}
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+    height: 70%;
+    margin-top: 20%;
+}
+.titulo{
+    position: static;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+}
+.titulo1{
+    margin-left: 5%;
+}
+#titulo2{
+    font-size:small;
+    color: rgb(49, 48, 48);
+    margin-left: 6%;
+}
+
+.dos{
+    display: grid;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    grid-template-columns: 67% 33%;
+    padding-left: 10px;
+}
+#notes{
+    font-size: larger;
+    margin-left: 15%;
+    margin-top: 100px;
+}
+#invoceto{
+    font-size:small;
+    text-align: right;
+    padding-right: 20px;
+}
+.tres{
+    background-color: rgb(190, 190, 190);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-left: 20px;
+}
+.numeros{
+    font-size: 15px;
+}
+#numl{
+    margin-top: auto;
+}
+#num2{
+    margin-top: auto;
+    font-size: 15px;
+}
+#subtotal{
+    text-align: right;
+    padding-right: 20px;
+}
+#titulo{
+    text-align: center;
+
+}
+
+*/columna derecha*/
+.right{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    display: grid;
+    direction: column;
+    grid-template-rows: repeat(5, 30%);
+}
+#invoice{
+    background-color: rgb(49, 58, 48);
+    text-align: center;
+    width: 100%;
+}
+#invoice-title{
+    background-color: rgb(49, 58, 48);
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+.qty{
+    background-color: rgb(40, 47, 39);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    font: bold 14px Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+}
