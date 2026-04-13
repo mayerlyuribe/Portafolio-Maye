@@ -57,6 +57,7 @@ body{
     text-align: center;
     padding-top: 40px;
     font-size: 25px;
+    padding-bottom: 1px;
 }
 .imagen-secund{
     width: 350px;
@@ -107,7 +108,7 @@ footer{
 }
 #yio{
     float: left;
-    padding-left:15g0px;
+    padding-left:125px;
     font-size: 25px;
     font-weight: bold;
 }
