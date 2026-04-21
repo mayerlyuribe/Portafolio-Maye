@@ -39,7 +39,7 @@ body{
     box-shadow: 0 8px 24px rgba(49, 44, 145, 0.2);
     border: 2px solid transparent;
     background-image: linear-gradient(white, white), 
-                      linear-gradient(135deg, #312c91, #7F77DD);
+                    linear-gradient(135deg, #312c91, #7F77DD);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
