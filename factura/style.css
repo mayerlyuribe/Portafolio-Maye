@@ -8,7 +8,6 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #b8b8b8;
-    margin: 1%;
 }
 h1{
     font-weight: bold;
@@ -103,6 +102,8 @@ h5{
     grid-template-rows: repeat(5, 1fr);
     text-align: center;
     padding: 15px;
+    overflow-y: auto;
+    max-height: 200px;
 }
 .num{
     text-align: right;
@@ -188,4 +189,121 @@ h5{
     width: 100px;
     height: 40px;
     margin-bottom: 10px ;
+}
+.coso{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        align-items: flex-start; /* evita problemas de centrado vertical */
+        flex-direction: column;
+    }
+    #volver{
+        display: none;
+    }
+
+    .factura {
+        width: 90%;
+        height: auto; /* ← clave, quita el 950px fijo */
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #invoice-titl {
+        display: none;
+    }
+
+    .secc-notes {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        padding: 15px;
+    }
+
+    .info {
+        text-align: left;
+        padding-right: 10px;
+    }
+
+    .secc-dates {
+        grid-template-rows: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .resumen-productos {
+        grid-template-columns: 0.5fr 2fr 1fr;
+        gap: 10px;
+        padding: 10px;
+        overflow-x: auto;
+    }
+
+    .price {
+        padding-right: 10px;
+    }
+
+    .resumen-total {
+        overflow-y: auto;
+        max-height: 200px;
+        grid-template-rows: auto;
+    }
+
+    .cuentas {
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+
+    #contenido-cuentas {
+        padding-right: 20px;
+    }
+
+    .terminos {
+        grid-template-columns: 1fr;
+        padding-left: 15px;
+        gap: 10px;
+    }
+    .terminos span{
+        display: none;
+    }
+
+    .payment {
+        grid-template-columns: 1fr;
+        padding-left: 15px;
+    }
+
+    .contenido-pay {
+        justify-content: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    #cardholder {
+        flex-direction: column;
+    }
+
+    .linea-fin {
+        padding: 30px 10px 10px 10px;
+    }
+}
+@media (max-width: 604px) {
+    img {
+        display: none;
+    }
+
+    #titulo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .resumen-productos {
+        font-size: 11px;
+    }
+
 }
