@@ -199,6 +199,7 @@ h5{
     width: 100px;
     height: 40px;
     margin-bottom: 10px ;
+    display: none;
 }
 .coso{
     display: none;
@@ -219,7 +220,7 @@ h5{
         width: 90%;
         height: auto; 
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.2fr 1fr 1fr 0fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0fr 1fr 1fr 0fr 1fr;
     }
 
     #invoice-titl {
@@ -263,10 +264,12 @@ h5{
     .cuentas {
         justify-content: flex-start;
         padding-left: 15px;
+        margin: 0;
     }
 
     #contenido-cuentas {
         padding-right: 20px;
+        padding-top: auto;
     }
 
     .terminos {
@@ -301,6 +304,7 @@ h5{
     }
     .cuentas-total{
         height: auto;
+        padding-left: 15px;
     }
     #valor-total{
         display: none;
