@@ -213,7 +213,7 @@ table tr th:nth-child(5) {
 
     .factura {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2fr 0.5fr 2fr 1.5fr 1fr;
+        grid-template-rows: 0.5fr 2fr 0.5fr 2fr 1.5fr 1fr 1fr;
         width: 100%;
         height: auto;
     }
@@ -282,6 +282,7 @@ table tr th:nth-child(5) {
     }
 
     .div8 {
+        grid-column: 1 / -1; 
         grid-template-columns: 1fr;
         padding: 15px;
         grid-row-start: auto;
@@ -310,10 +311,17 @@ table tr th:nth-child(5) {
     }
 
     .div9 {
-        grid-row: auto;
-        grid-column-start: auto;
-        grid-row-start: auto;
-        height: auto;
+    grid-row: auto;
+    grid-row-end: auto;
+    grid-column: 1 / -1;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+    height: auto;
+    }
+    .linea-fin {
+        padding: 20px;
+        text-align: center;
     }
 
     .div2 {
