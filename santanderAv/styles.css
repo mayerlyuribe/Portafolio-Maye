@@ -14,6 +14,7 @@ body{
     --fuente-secundaria:Quicksand;
     --color-princiapl:#00D668;
     --verde-claro:#00b9591e;
+    --amarillo-principal:#FFD600 ;
 }
 h1{
     font-family: var(--fuente-principal);
@@ -51,7 +52,9 @@ h1{
     background-color:#e9ffeb;
     color: var(--color-princiapl) ; 
 }
-
+header{
+    width: 100%;
+}
 .barra ul{
     display: flex;
     gap: 10%;
@@ -101,10 +104,11 @@ h1{
     align-items: end;
 }
 .img-tarjeta p{
-    background-color: #ffe60068;
+    background-color:var(--amarillo-principal) ;
     width: 70px;
     border-radius: 5px;
     font-family: var(--fuente-principal);
+    color: #2f2b0691 ;
 }
 .info{
     display: flex;
