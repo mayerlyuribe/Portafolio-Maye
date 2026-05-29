@@ -3,31 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Santander Aventura</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/mountain.png" type="image">
 </head>
 <body>
     <header>
     <nav class="barra">
+        <div class="logo">
+        <img src="img/logo.png" alt="" class="logo-img">
+        </div>
         <h1>Santander Aventura</h1>
         <ul>
             <li><a href="#aventuras" class="link-nav">Aventuras</a></li>
             <li><a href="#galeria" class="link-nav">Galería</a></li>
             <li><a href="#guias" class="link-nav">Guias</a></li>
-            <li><a href="#preguntas" class="link-nav">Preguntas</a></li>
+            <li><a href="#reseñas" class="link-nav">Reseñas</a></li>
+            <li><a href="#contacto" class="link-nav">Contáctanos</a></li>
         </ul>
         <button class="btn">RESERVAR</button>
     </nav>
     </header>
         <div class="contenedor-img">
-            <h1>DONDE TERMINA LA RUTINA, EMPIEZA TU AVENTURA</h1>
+            <h1 class="slogan">DONDE TERMINA LA RUTINA, EMPIEZA TU AVENTURA</h1>
             <h3>WHERE ROUTINE ENDS, YOUR ADVENTURE BEGINS</h3>
         </div>
-        <h2>Paquetes de aventuras</h2>
-        <p>adventure packages</p>
-
-        <div class="contenedor-tarjetas">
+        <h2 class="paquetes-titulo">Paquetes de aventuras</h2>
+        <p class="paquetes-sub">adventure packages</p>
+        <section id="aventuras" class="contenedor-tarjetas">
             <div class="tarjeta">
+                <div class="img-tarjeta parapente">
+                    <p>108K</p>
+                </div>
+                <div class="info">
+                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Dia</p></div>
+                    <p>popular</p>
+                </div>
+                <h3>Parapente en Mesa de Ruitoque</h3>
+                    <p>¡Domina los cielos! Siente la libertad absoluta mientras planeas sobre el imponente cañón de Ruitoque. Una vista inigualable de Santander desde el aire.</p>
+                    <button>Descubre Más</button>
+            </div>
+
+            <div class="tarjeta">
+                <div class="img-tarjeta rafting">
+                    <p>120K</p>
+                </div>
+                <div class="info">
+                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Dia</p></div>
+                    <p>popular</p>
+                </div>
+                <h3> Grupo Rafting por el Río Suárez</h3>
+                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
+                    <button>Descubre Más</button>
+            </div>
+
+            <div class="tarjeta">
+                <div class="img-tarjeta cañon-chicamocha">
+                    <p>150K</p>
+                </div>
+                <div class="info">
+                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Dia</p></div>
+                </div>
+                <h3>Caminata por el Cañón de Chicamocha</h3>
+                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
+                    <button>Descubre Más</button>
+                </div>
+
+                    <div class="tarjeta">
+                <div class="img-tarjeta cueva">
+                    <p>90K</p>
+                </div>
+                <div class="info">
+                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1/2 Dia</p></div>
+                </div>
+                <h3>Espeleología Cueva del Indio</h3>
+                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
+                    <button>Descubre Más</button>
+                </div>
+
+                <div class="tarjeta">
+                <div class="img-tarjeta caminata-barichara">
+                    <p>90K</p>
+                </div>
+                <div class="info">
+                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1/2 Dia</p></div>
+                </div>
+                <h3>Trekking Camino Real Barichara</h3>
+                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
+                    <button>Descubre Más</button>
+                </div>
+
+                <div class="tarjeta">
+                <div class="img-tarjeta">
+                    <p>108K</p>
+                </div>
+                <div class="info">
+                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Dia</p></div>
+                    <p>popular</p>
+                </div>
+                <h3>Paquete Extremo</h3>
+                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
+                    <button>Descubre Más</button>
+                </div>
+
+                <div class="tarjeta">
                 <div class="img-tarjeta">
                     <p>108K</p>
                 </div>
@@ -40,7 +119,7 @@
                     <button>Descubre Más</button>
                 </div>
 
-            <div class="tarjeta">
+                <div class="tarjeta">
                 <div class="img-tarjeta">
                     <p>108K</p>
                 </div>
@@ -52,19 +131,22 @@
                     <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
                     <button>Descubre Más</button>
                 </div>
+        </section>
+        <section id="galeria" class="galeria">
+        <h2 class="galeria-titulo">Galería de Imágenes</h2>
+        </section>
+        <h2 class="guias-titulo">Nuestros Guías</h2>
+        <section id="guias" class="guias">
+            <div class="guia-contenedor">
+                <img src="img/guia.jpg" alt="" class="guia-img">
 
-            <div class="tarjeta">
-                <div class="img-tarjeta">
-                    <p>108K</p>
+                <div class="guia-info">
+                    <h3 class="noimbre-guia">Fulanito guia</h3>
+                    <p class="informacion">
+                    ES: Apasionado por las montañas de su tierra natal, Camilo es guía certificado en rescate vertical y rafting. Su misión es mostrarte la cara más salvaje de Santander con seguridad y emoción.
+                    </p>
                 </div>
-                <div class="info">
-                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Dia</p></div>
-                    <p>popular</p>
-                </div>
-                <h3>Parapente en Mesa de Ruitoque</h3>
-                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
-                    <button>Descubre Más</button>
-                </div>
-        </div>
+            </div>
+        </section>
     </body>
 </html>

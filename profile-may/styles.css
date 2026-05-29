@@ -6,7 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: Rubik;
-    background-color: rgb(212, 224, 255);
+    background-color: #d4e0ff;
 }
 .container{
     background-color: #eef0ff;
@@ -25,7 +25,7 @@ body{
 .cargo{
     font-size: 25px;
     margin: 5px;
-    color: rgb(24, 0, 244);
+    color: #1800f4;
     font-weight: 20%;
 }
 p{
@@ -53,14 +53,54 @@ p{
 
 .btn:hover{
     transform: scale(1.05);
-    box-shadow: 0px 5px 10px rgba(26, 28, 109, 0.543);
+    box-shadow: 0px 5px 10px #1a1c6d8a;
 }
 .btn:active{
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .container:hover{
     transform: scale(1.05);
-    box-shadow: 0px 10px 15px rgba(26, 28, 109, 0.543);
+    box-shadow: 0px 10px 15px #1a1c6d8a;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 85%; 
+        padding: 5%;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    .img {
+        width: 200px; /* Reducimos un poco la imagen */
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .cargo {
+        font-size: 20px;
+    }
+
+    .img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 120px;
+        height: 45px;
+    }
 }
