@@ -1,449 +1,459 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santander Aventura</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../img/mountain.png" type="image">
+    <link rel="shortcut icon" type="image/x-icon" href="img/mountain.png">
 </head>
 <body>
+
+    <!-- NAVEGACIÓN -->
     <header>
-    <nav class="barra">
-        <div class="logo">
-        <img src="img/logo.png" alt="" class="logo-img">
-        </div>
-        <h1 class="logo-texto">Santander Aventura</h1>
-        <ul>
-            <li><a href="#aventuras" class="link-nav">Aventuras</a></li>
-            <li><a href="#galeria" class="link-nav">Galería</a></li>
-            <li><a href="#guias" class="link-nav">Guias</a></li>
-            <li><a href="#reseñas" class="link-nav">Reseñas</a></li>
-            <li><a href="#contacto" class="link-nav">Contáctanos</a></li>
-        </ul>
-        <a href="#reserva" >
-        <button class="btn reservar">RESERVAR</button>
-        </a>
-    </nav>
+        <nav class="barra">
+            <div class="logo">
+                <img src="img/logo.png" alt="Santander Aventura" class="logo-img">
+            </div>
+            <h1>Santander Aventura</h1>
+            <ul>
+                <li><a href="#aventuras" class="enlace-nav">Aventuras</a></li>
+                <li><a href="#galeria" class="enlace-nav">Galería</a></li>
+                <li><a href="#guias" class="enlace-nav">Guías</a></li>
+                <li><a href="#resenas" class="enlace-nav">Reseñas</a></li>
+                <li><a href="#contacto" class="enlace-nav">Contáctanos</a></li>
+            </ul>
+            <a href="#reserva">
+                <button class="btn reservar">RESERVAR</button>
+            </a>
+        </nav>
     </header>
-        <div class="contenedor-video">
-    <video autoplay muted loop>
-        <source src="videos/dola.mp4" type="video/mp4">
-    </video>
 
-    <div class="contenido">
-        <h1 class="slogan">DONDE TERMINA LA RUTINA, EMPIEZA TU AVENTURA</h1>
-        <h3>WHERE ROUTINE ENDS, YOUR ADVENTURE BEGINS</h3>
+    <!-- VIDEO HERO -->
+    <div class="contenedor-video">
+        <video autoplay muted loop>
+            <source src="videos/dola.mp4" type="video/mp4">
+        </video>
+        <div class="contenido">
+            <h1 class="eslogan">DONDE TERMINA LA RUTINA, EMPIEZA TU AVENTURA</h1>
+            <h3>WHERE ROUTINE ENDS, YOUR ADVENTURE BEGINS</h3>
+        </div>
     </div>
-</div>
-        <h2 class="paquetes-titulo">Paquetes de aventuras</h2>
-        <p class="paquetes-sub">adventure packages</p>
-        <section id="aventuras" class="contenedor-tarjetas">
-            <div class="tarjeta">
-                <div class="img-tarjeta parapente">
-                    <p>108K</p>
-                </div>
-                <div class="info">
-                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Dia</p></div>
-                    <p>popular</p>
-                </div>
-                <h3>Parapente en Mesa de Ruitoque</h3>
-                    <p>¡Domina los cielos! Siente la libertad absoluta mientras planeas sobre el imponente cañón de Ruitoque. Una vista inigualable de Santander desde el aire.</p>
-                    <button>Descubre Más</button>
+
+    <!-- PAQUETES DE AVENTURAS -->
+    <h2 class="paquetes-titulo">Paquetes de aventuras</h2>
+    <p class="paquetes-sub">adventure packages</p>
+
+    <section id="aventuras" class="contenedor-tarjetas">
+
+        <div class="tarjeta">
+            <div class="img-tarjeta parapente"><p>108K</p></div>
+            <div class="info">
+                <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Día</p></div>
+                <p>popular</p>
             </div>
+            <h3>Parapente en Mesa de Ruitoque</h3>
+            <p>¡Domina los cielos! Siente la libertad absoluta mientras planeas sobre el imponente cañón de Ruitoque. Una vista inigualable de Santander desde el aire.</p>
+            <button>Descubre Más</button>
+        </div>
 
-            <div class="tarjeta">
-                <div class="img-tarjeta rafting">
-                    <p>120K</p>
-                </div>
-                <div class="info">
-                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Dia</p></div>
-                    <p>popular</p>
-                </div>
-                <h3> Grupo Rafting por el Río Suárez</h3>
-                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
-                    <button>Descubre Más</button>
+        <div class="tarjeta">
+            <div class="img-tarjeta rafting"><p>120K</p></div>
+            <div class="info">
+                <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Día</p></div>
+                <p>popular</p>
             </div>
+            <h3>Grupo Rafting por el Río Suárez</h3>
+            <p>Desafía la fuerza del agua. Enfrenta los rápidos más legendarios de Colombia en una experiencia cargada de adrenalina y pura naturaleza santandereana.</p>
+            <button>Descubre Más</button>
+        </div>
 
-            <div class="tarjeta">
-                <div class="img-tarjeta cañon-chicamocha">
-                    <p>150K</p>
-                </div>
-                <div class="info">
-                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Dia</p></div>
-                </div>
-                <h3>Caminata por el Cañón de Chicamocha</h3>
-                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
-                    <button>Descubre Más</button>
-                </div>
+        <div class="tarjeta">
+            <div class="img-tarjeta canon-chicamocha"><p>150K</p></div>
+            <div class="info">
+                <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1 Día</p></div>
+            </div>
+            <h3>Caminata por el Cañón de Chicamocha</h3>
+            <p>Majestuosidad infinita. Recorre uno de los cañones más grandes del mundo. Un viaje entre montañas milenarias y la cultura de nuestra tierra.</p>
+            <button>Descubre Más</button>
+        </div>
 
-                    <div class="tarjeta">
-                <div class="img-tarjeta cueva">
-                    <p>90K</p>
-                </div>
-                <div class="info">
-                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1/2 Dia</p></div>
-                </div>
-                <h3>Espeleología Cueva del Indio</h3>
-                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
-                    <button>Descubre Más</button>
-                </div>
+        <div class="tarjeta">
+            <div class="img-tarjeta cueva"><p>90K</p></div>
+            <div class="info">
+                <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1/2 Día</p></div>
+            </div>
+            <h3>Espeleología Cueva del Indio</h3>
+            <p>Explora las entrañas de la tierra. Adéntrate en un mundo subterráneo lleno de misterio, formaciones rocosas únicas y una conexión total con lo ancestral.</p>
+            <button>Descubre Más</button>
+        </div>
 
-                <div class="tarjeta">
-                <div class="img-tarjeta caminata-barichara">
-                    <p>90K</p>
-                </div>
-                <div class="info">
-                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1/2 Dia</p></div>
-                </div>
-                <h3>Trekking Camino Real Barichara</h3>
-                    <p>Lor iure, et quos possimus voluptate labore unde deserunt? Laudantium accusantium earum modi. Amet praesentium eius saepe dolor porro labore.</p>
-                    <button>Descubre Más</button>
-                </div>
+        <div class="tarjeta">
+            <div class="img-tarjeta caminata-barichara"><p>90K</p></div>
+            <div class="info">
+                <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>1/2 Día</p></div>
+            </div>
+            <h3>Trekking Camino Real Barichara</h3>
+            <p>Pasos con historia. Camina por senderos empedrados de época colonial que conectan dos joyas arquitectónicas. Un recorrido inolvidable para los sentidos</p>
+            <button>Descubre Más</button>
+        </div>
 
-                <div class="tarjeta">
-                <div class="img-tarjeta paquete-extremo1">
-                    <p>650K</p>
-                </div>
-                <div class="info">
-                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>3 Días</p></div>
-                    <p>popular</p>
-                </div>
-                <h3>Paquete Extremo 1</h3>
-                    <p>Tres días de adrenalina total combinando parapente, rafting y espeleología en los mejores escenarios de Santander.</p>
-                    <button>Descubre Más</button>
-                </div>
-                <div class="tarjeta">
-                <div class="img-tarjeta paquete-extremo2">
-                    <p>290K</p>
-                </div>
-                <div class="info">
-                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>2 Días</p></div>
-                
-                </div>
-                <h3>Paquete Extremo 2</h3>
-                    <p>Descubre cuevas misteriosas y recorre antiguos caminos rodeados de paisajes únicos, historia y naturaleza santandereana.</p>
-                    <button>Descubre Más</button>
-                </div>
-                <div class="tarjeta">
-                <div class="img-tarjeta paquete-extremo3">
-                    <p>420K</p>
-                </div>
-                <div class="info">
-                    <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>2 Días</p></div>
-                    
-                </div>
-                <h3>Paquete Extremo 3</h3>
-                    <p>Combo Adrenalina Santander Vuela sobre Santander y desafía rápidos extremos en una aventura llena de adrenalina y emoción.</p>
-                    <button>Descubre Más</button>
-                </div>
-        </section>
-        <!-- GALERÍA CON CARRUSEL  -->
-        <section id="galeria" class="galeria">
-            <h2 class="galeria-titulo">Galería de Imágenes</h2>
-            <p class="galeria-sub">Image Gallery</p>
-            <div class="galeria-contenedor">
-                <div class="carrusel-pista">
-                    <div class="carrusel-riel">
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/Canotaje_Rio_Suarez_3_55280be464.jpg" alt="Canotaje en el Río Suárez">
-                            <span class="diapositiva-etiqueta">Río Suárez</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/chicamocha.png" alt="Cañón del Chicamocha">
-                            <span class="diapositiva-etiqueta">Chicamocha</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/cueva.png" alt="Cueva del Indio">
-                            <span class="diapositiva-etiqueta">Cueva del Indio</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/cueva0.1.png" alt="Espeleología">
-                            <span class="diapositiva-etiqueta">Espeleología</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/cueva02.png" alt="Aventura subterránea">
-                            <span class="diapositiva-etiqueta">Aventura Subterránea</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/panachi.png" alt="Parque Panachi">
-                            <span class="diapositiva-etiqueta">Panachi</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/Rafting.png" alt="Rafting">
-                            <span class="diapositiva-etiqueta">Rafting</span>
-                        </div>
-                        <!-- Duplicado para loop infinito -->
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/Canotaje_Rio_Suarez_3_55280be464.jpg" alt="Canotaje en el Río Suárez">
-                            <span class="diapositiva-etiqueta">Río Suárez</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/chicamocha.png" alt="Cañón del Chicamocha">
-                            <span class="diapositiva-etiqueta">Chicamocha</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/cueva.png" alt="Cueva del Indio">
-                            <span class="diapositiva-etiqueta">Cueva del Indio</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/cueva0.1.png" alt="Espeleología">
-                            <span class="diapositiva-etiqueta">Espeleología</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/cueva02.png" alt="Aventura subterránea">
-                            <span class="diapositiva-etiqueta">Aventura Subterránea</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/panachi.png" alt="Parque Panachi">
-                            <span class="diapositiva-etiqueta">Panachi</span>
-                        </div>
-                        <div class="carrusel-diapositiva">
-                            <img src="carrusel/Rafting.png" alt="Rafting">
-                            <span class="diapositiva-etiqueta">Rafting</span>
-                        </div>
+        <div class="tarjeta">
+            <div class="img-tarjeta paquete-extremo1"><p>650K</p></div>
+            <div class="info">
+                <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>3 Días</p></div>
+                <p>popular</p>
+            </div>
+            <h3>Paquete Extremo 1</h3>
+            <p>Tres días de adrenalina total combinando parapente, rafting y espeleología en los mejores escenarios de Santander.</p>
+            <button>Descubre Más</button>
+        </div>
+
+        <div class="tarjeta">
+            <div class="img-tarjeta paquete-extremo2"><p>290K</p></div>
+            <div class="info">
+                <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>2 Días</p></div>
+            </div>
+            <h3>Paquete Extremo 2</h3>
+            <p>Descubre cuevas misteriosas y recorre antiguos caminos rodeados de paisajes únicos, historia y naturaleza santandereana.</p>
+            <button>Descubre Más</button>
+        </div>
+
+        <div class="tarjeta">
+            <div class="img-tarjeta paquete-extremo3"><p>420K</p></div>
+            <div class="info">
+                <div class="duracion"><img src="img/reloj.png" alt="" class="tiempo"><p>2 Días</p></div>
+            </div>
+            <h3>Paquete Extremo 3</h3>
+            <p>Combo Adrenalina Santander. Vuela sobre Santander y desafía rápidos extremos en una aventura llena de adrenalina y emoción.</p>
+            <button>Descubre Más</button>
+        </div>
+
+    </section>
+
+    <!-- GALERÍA CON CARRUSEL -->
+    <section id="galeria" class="galeria">
+        <h2 class="galeria-titulo">Galería de Imágenes</h2>
+        <p class="galeria-sub">Image Gallery</p>
+        <div class="galeria-contenedor">
+            <div class="carrusel-pista">
+                <div class="carrusel-riel">
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/Canotaje_Rio_Suarez_3_55280be464.jpg" alt="Canotaje en el Río Suárez">
+                        <span class="etiqueta-diapositiva">Río Suárez</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/chicamocha.png" alt="Cañón del Chicamocha">
+                        <span class="etiqueta-diapositiva">Chicamocha</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/cueva.png" alt="Cueva del Indio">
+                        <span class="etiqueta-diapositiva">Cueva del Indio</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/cueva0.1.png" alt="Espeleología">
+                        <span class="etiqueta-diapositiva">Espeleología</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/cueva02.png" alt="Aventura subterránea">
+                        <span class="etiqueta-diapositiva">Aventura Subterránea</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/panachi.png" alt="Parque Panachi">
+                        <span class="etiqueta-diapositiva">Panachi</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/Rafting.png" alt="Rafting">
+                        <span class="etiqueta-diapositiva">Rafting</span>
+                    </div>
+                    <!-- Duplicado para loop infinito -->
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/Canotaje_Rio_Suarez_3_55280be464.jpg" alt="Canotaje en el Río Suárez">
+                        <span class="etiqueta-diapositiva">Río Suárez</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/chicamocha.png" alt="Cañón del Chicamocha">
+                        <span class="etiqueta-diapositiva">Chicamocha</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/cueva.png" alt="Cueva del Indio">
+                        <span class="etiqueta-diapositiva">Cueva del Indio</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/cueva0.1.png" alt="Espeleología">
+                        <span class="etiqueta-diapositiva">Espeleología</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/cueva02.png" alt="Aventura subterránea">
+                        <span class="etiqueta-diapositiva">Aventura Subterránea</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/panachi.png" alt="Parque Panachi">
+                        <span class="etiqueta-diapositiva">Panachi</span>
+                    </div>
+                    <div class="carrusel-diapositiva">
+                        <img src="carrusel/Rafting.png" alt="Rafting">
+                        <span class="etiqueta-diapositiva">Rafting</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- SECCIÓN DE VIDEOS -->
-        <section class="seccion-videos">
-            <h2 class="titulo-videos">Vive la Experiencia</h2>
-            <p class="subtitulo-videos">Feel the Experience</p>
-            <div class="contenedor-videos">
-                <!-- Video principal CON audio -->
-                <div class="video-principal">
-                    <video controls class="video-grande">
-                        <source src="videos/ssstik.mp4" type="video/mp4">
-                    </video>
-                    <div class="info-video">
-                        <h3>Rafting en el Río Suárez</h3>
-                        <p>Diversión y adrenalina pura en las aguas del Suárez</p>
-                    </div>
+    <!-- SECCIÓN DE VIDEOS -->
+    <section class="seccion-videos">
+        <h2 class="titulo-videos">Vive la Experiencia</h2>
+        <p class="subtitulo-videos">Feel the Experience</p>
+        <div class="contenedor-videos">
+            <div class="video-principal">
+                <div class="info-video">
+                    <h3>Rafting en el Río Suárez</h3>
+                    <p>Diversión y adrenalina pura en las aguas del Suárez</p>
                 </div>
+                <video controls class="video-grande">
+                    <source src="videos/ssstik.mp4" type="video/mp4">
+                </video>
+                <div class="info-video">
+                    <h3>Parapente sobre el Cañón de Ruitoque</h3>
+                    <p>La experiencia más emocionante del cañón</p>
+                </div>
+                <video controls class="video-grande" poster="https://www.parapentesangil.com/wp-content/uploads/2025/09/Parapente-en-San-Gil-precios.jpg">
+                    <source src="videos/parapente.mp4" type="video/mp4">
+                </video>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- SECCIÓN GUÍAS -->
-        <h2 class="guias-titulo">Nuestros Guías</h2>
-        <p class="guias-sub">Our Guides</p>
-        <section id="guias" class="guias">
-            <div class="guia-contenedor">
-                <div class="guia-foto-contenedor">
-                    <img src="img/camilo.jpeg" alt="Camilo Pinzón - Guía Turístico" class="guia-img">
-                    <div class="guia-badge"><img class="certificado"src="img/check.png" alt=""> <span>Certificado</span></div>
-                </div>
-                <div class="guia-info">
-                    <span class="guia-etiqueta">Guía Principal</span>
-                    <h3 class="nombre-guia">Camilo Pinzón</h3>
-                    <p class="informacion">
-                        Apasionado por las montañas de su tierra natal, Camilo es guía certificado en rescate vertical y rafting. Santandereano de corazón, lleva más de 10 años mostrándole a nacionales y extranjeros la cara más emocionante de su región. Su misión es que cada aventura sea segura, auténtica e inolvidable.
-                    </p>
-                    <p class="informacion-en">
-                        <em>Passionate about his homeland's mountains, Camilo is a certified guide in vertical rescue and rafting. His mission: safe, authentic, unforgettable adventures.</em>
-                    </p>
-                    <div class="guia-certificaciones">
-                        <span>🏔️ Rescate Vertical</span>
-                        <span>🌊 Rafting Nivel 4</span>
-                        <span>🦇 Espeleología</span>
-                        <span>🥾 Senderismo Avanzado</span>
-                    </div>
+    <!-- SECCIÓN GUÍAS -->
+    <h2 class="guias-titulo">Nuestros Guías</h2>
+    <p class="guias-sub">Our Guides</p>
+    <section id="guias" class="guias">
+        <div class="guia-contenedor">
+            <div class="guia-foto-contenedor">
+                <img src="img/camilo.jpeg" alt="Camilo Pinzón - Guía Turístico" class="guia-img">
+                <div class="guia-insignia">
+                    <img class="certificado" src="img/check.png" alt="">
+                    <span>Certificado</span>
                 </div>
             </div>
-        </section>
+            <div class="guia-info">
+                <span class="guia-etiqueta">Guía Principal</span>
+                <h3 class="nombre-guia">Camilo Pinzón</h3>
+                <p class="informacion">
+                    Apasionado por las montañas de su tierra natal, Camilo es guía certificado en rescate vertical y rafting. Santandereano de corazón, lleva más de 10 años mostrándole a nacionales y extranjeros la cara más emocionante de su región. Su misión es que cada aventura sea segura, auténtica e inolvidable.
+                </p>
+                <p class="informacion-en">
+                    <em>Passionate about his homeland's mountains, Camilo is a certified guide in vertical rescue and rafting. His mission: safe, authentic, unforgettable adventures.</em>
+                </p>
+                <div class="guia-certificaciones">
+                    <span><img class="iconos" src="https://cdn-icons-png.flaticon.com/128/8343/8343682.png" alt="Rescate Vertical"> Rescate Vertical</span>
+                    <span><img class="iconos" src="https://cdn-icons-png.flaticon.com/128/4765/4765663.png" alt="Rafting Nivel 4"> Rafting Nivel 4</span>
+                    <span><img class="iconos" src="https://cdn-icons-png.flaticon.com/128/16177/16177377.png" alt="Espeleología"> Espeleología</span>
+                    <span><img class="iconos" src="https://cdn-icons-png.flaticon.com/128/5224/5224445.png" alt="Senderismo Avanzado"> Senderismo Avanzado</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- SECCIÓN RESEÑAS / TESTIMONIOS -->
-        <section id="reseñas" class="reseñas">
-            <h2 class="reseñas-titulo">Lo que dicen nuestros aventureros</h2>
-            <p class="reseñas-sub">What our adventurers say</p>
-            <div class="reseñas-contenedor">
-                <div class="reseña-tarjeta">
-                    <div class="estrellas">★★★★★</div>
-                    <p class="reseña-texto">"El parapente sobre el cañón de Ruitoque fue lo más emocionante que he hecho en mi vida. Camilo es un guía increíble, me dio mucha confianza desde el primer momento."</p>
-                    <div class="reseña-autor">
-                        <div class="autor-avatar">MR</div>
-                        <div>
-                            <strong>María Rodríguez</strong>
-                            <span>Bogotá, Colombia 🇨🇴</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reseña-tarjeta reseña-destacada">
-                    <div class="estrellas">★★★★★</div>
-                    <p class="reseña-texto">"Did the rafting on Río Suárez and it was absolutely wild! The guide kept us safe while making sure we had the time of our lives. Santander is a hidden gem!"</p>
-                    <div class="reseña-autor">
-                        <div class="autor-avatar">JM</div>
-                        <div>
-                            <strong>Jake Morrison</strong>
-                            <span>Toronto, Canada 🇨🇦</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reseña-tarjeta">
-                    <div class="estrellas">★★★★★</div>
-                    <p class="reseña-texto">"La espeleología en la Cueva del Indio fue una experiencia única. Nunca había hecho algo así y Camilo lo hizo súper accesible. ¡100% recomendado!"</p>
-                    <div class="reseña-autor">
-                        <div class="autor-avatar">AC</div>
-                        <div>
-                            <strong>Andrés Castillo</strong>
-                            <span>Medellín, Colombia 🇨🇴</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="reseña-tarjeta">
-                    <div class="estrellas">★★★★★</div>
-                    <p class="reseña-texto">"Hicimos el trekking del Camino Real Barichara-Guane y fue mágico. Los paisajes son de otro mundo. La organización fue perfecta de principio a fin."</p>
-                    <div class="reseña-autor">
-                        <div class="autor-avatar">LP</div>
-                        <div>
-                            <strong>Laura Pérez</strong>
-                            <span>Bucaramanga, Colombia 🇨🇴</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- RESEÑAS / TESTIMONIOS -->
+    <section id="resenas" class="resenas">
+        <h2 class="resenas-titulo">Lo que dicen nuestros aventureros</h2>
+        <p class="resenas-sub">What our adventurers say</p>
+        <div class="resenas-contenedor">
 
-        <!-- SECCIÓN FORMULARIO DE RESERVA -->
-        <section class="reserva-seccion">
-            <video autoplay muted loop class="reserva-video">
-                <source src="videos/reservas_horizontal.mp4" type="video/mp4">
-            </video>
-            <div class="reserva-capa"></div>
-            <div   class="reserva-contenido">
-                <div id="reserva" class="reserva-encabezado">
-                    <h2>¿Listo para la aventura?</h2>
-                    <p class="reserva-sub">Ready for the adventure?</p>
-                </div>
-                <form class="formulario-reserva">
-                    <h3>Reservar Ahora</h3>
-                    <div class="campo-grupo">
-                        <label for="nombre">Nombre completo *</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <div class="resena-tarjeta">
+                <div class="estrellas">★★★★★</div>
+                <p class="resena-texto">"El parapente sobre el cañón de Ruitoque fue lo más emocionante que he hecho en mi vida. Camilo es un guía increíble, me dio mucha confianza desde el primer momento."</p>
+                <div class="resena-autor">
+                    <div class="avatar-autor">MR</div>
+                    <div>
+                        <strong>María Rodríguez</strong>
+                        <span>Bogotá, Colombia 🇨🇴</span>
                     </div>
-                    <div class="campo-grupo">
-                        <label for="telefono">Teléfono / WhatsApp *</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" required>
-                    </div>
-                    <div class="campo-grupo">
-                        <label for="paquete">Paquete de aventura *</label>
-                        <select id="paquete" name="paquete" required>
-                            <option value="">Selecciona un paquete</option>
-                            <option value="parapente">Parapente Mesa de Ruitoque — $180.000</option>
-                            <option value="rafting">Rafting Río Suárez — $120.000</option>
-                            <option value="chicamocha">Cañón Chicamocha + Panachi — $150.000</option>
-                            <option value="cueva">Espeleología Cueva del Indio — $90.000</option>
-                            <option value="barichara">Trekking Camino Real Barichara — $80.000</option>
-                            <option value="extremo">Paquete Extremo 3 días — $650.000</option>
-                            <option value="extremo2">Paquete Extremo 2 días — $550.000</option>
-                        </select>
-                    </div>
-                    <div class="campo-fila">
-                        <div class="campo-grupo">
-                            <label for="fecha">Fecha *</label>
-                            <input type="date" id="fecha" name="fecha" required>
-                        </div>
-                        <div class="campo-grupo">
-                            <label for="personas">N° de personas *</label>
-                            <input type="number" id="personas" name="personas" min="1" max="20" placeholder="1" required>
-                        </div>
-                    </div>
-                    <div class="campo-grupo">
-                        <label for="mensaje">Mensaje adicional</label>
-                        <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Alguna pregunta o necesidad especial?"></textarea>
-                    </div>
-                    <button type="submit" class="btn-reservar">¡RESERVAR AHORA!</button>
-                </form>
-            </div>
-        </section>
-        <section class="info-util">
-            <h2 class="info-titulo">Información Práctica</h2>
-            <p class="info-sub">What to know before you go</p>
-            <div class="info-contenedor">
-                <div class="info-bloque">
-                    <h3>🎒 ¿Qué llevar?</h3>
-                    <ul>
-                        <li>Ropa cómoda y deportiva</li>
-                        <li>Zapatos con buen agarre</li>
-                        <li>Protector solar y repelente</li>
-                        <li>Botella de agua (mínimo 1L)</li>
-                        <li>Documento de identidad</li>
-                        <li>Snack energético</li>
-                    </ul>
-                </div>
-                <div class="info-bloque">
-                    <h3>📋 Recomendaciones</h3>
-                    <ul>
-                        <li>Llegar 15 minutos antes</li>
-                        <li>Hidratarse bien el día anterior</li>
-                        <li>No consumir alcohol antes</li>
-                        <li>Avisar condiciones médicas</li>
-                        <li>Todo el equipo de seguridad incluido</li>
-                        <li>Menores de 12 años consultar</li>
-                    </ul>
-                </div>
-                <div class="info-bloque">
-                    <h3>❌ Política de Cancelación</h3>
-                    <ul>
-                        <li>Cancelación gratuita hasta 48h antes</li>
-                        <li>50% reembolso entre 24h y 48h</li>
-                        <li>Sin reembolso en menos de 24h</li>
-                        <li>Reprogramación sin costo con 24h de aviso</li>
-                        <li>Cancelación por mal clima: reembolso total</li>
-                    </ul>
                 </div>
             </div>
-        </section>
 
-        <!-- FOOTER -->
-        <footer id="contacto"class="footer">
-            <div class="footer-contenedor">
-                <div class="footer-columna">
-                    <div class="footer-logo">
-                        <img src="img/logo.png" alt="Santander Aventura" class="footer-logo-img">
-                        <span>Santander Aventura</span>
-                    </div>
-                    <p>Donde termina la rutina, empieza tu aventura. Turismo de aventura con corazón santandereano.</p>
-                </div>
-                <div class="footer-columna">
-                    <h4>Aventuras</h4>
-                    <ul class="footer-lista">
-                        <li><a href="#aventuras">Parapente</a></li>
-                        <li><a href="#aventuras">Rafting</a></li>
-                        <li><a href="#aventuras">Cañón del Chicamocha</a></li>
-                        <li><a href="#aventuras">Espeleología</a></li>
-                        <li><a href="#aventuras">Trekking Barichara</a></li>
-                        <li><a href="#aventuras">Paquete Extremo</a></li>
-                    </ul>
-                </div>
-                <div class="footer-columna">
-                    <h4>Contáctanos</h4>
-                    <ul class="footer-lista">
-                        <li>📧 santanderaventura@gmail.com</li>
-                        <li>📱 +57 300 123 4567</li>
-                        <li>📍 San Gil, Santander, Colombia</li>
-                    </ul>
-                    <div class="redes-sociales">
-                        <a href="#" class="red-social" aria-label="Instagram" target="_blank">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        </a>
-                        <a href="https://www.facebook.com/" class="red-social" aria-label="Facebook" target="_blank">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                        </a>
-                        <a href="#" class="red-social" aria-label="YouTube" target="_blank">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-                        </a>
-                        <a href="https://wa.me/573001234567" class="red-social" aria-label="WhatsApp" target="_blank">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        </a>
+            <div class="resena-tarjeta resena-destacada">
+                <div class="estrellas">★★★★★</div>
+                <p class="resena-texto">"Did the rafting on Río Suárez and it was absolutely wild! The guide kept us safe while making sure we had the time of our lives. Santander is a hidden gem!"</p>
+                <div class="resena-autor">
+                    <div class="avatar-autor">JM</div>
+                    <div>
+                        <strong>Jake Morrison</strong>
+                        <span>Toronto, Canada 🇨🇦</span>
                     </div>
                 </div>
             </div>
-            <div class="footer-fondo">
-                <p>© 2026 Santander Aventura · Hecho con ❤️ en Santander, Colombia · Todos los derechos reservados</p>
-            </div>
-        </footer>
 
-    </body>
+            <div class="resena-tarjeta">
+                <div class="estrellas">★★★★★</div>
+                <p class="resena-texto">"La espeleología en la Cueva del Indio fue una experiencia única. Nunca había hecho algo así y Camilo lo hizo súper accesible. ¡100% recomendado!"</p>
+                <div class="resena-autor">
+                    <div class="avatar-autor">AC</div>
+                    <div>
+                        <strong>Andrés Castillo</strong>
+                        <span>Medellín, Colombia 🇨🇴</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resena-tarjeta">
+                <div class="estrellas">★★★★★</div>
+                <p class="resena-texto">"Hicimos el trekking del Camino Real Barichara-Guane y fue mágico. Los paisajes son de otro mundo. La organización fue perfecta de principio a fin."</p>
+                <div class="resena-autor">
+                    <div class="avatar-autor">LP</div>
+                    <div>
+                        <strong>Laura Pérez</strong>
+                        <span>Bucaramanga, Colombia 🇨🇴</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE RESERVA -->
+    <section class="seccion-reserva">
+        <video autoplay muted loop class="video-reserva">
+            <source src="videos/reservas_horizontal.mp4" type="video/mp4">
+        </video>
+        <div class="capa-reserva"></div>
+        <div class="contenido-reserva">
+            <div id="reserva" class="encabezado-reserva">
+                <h2>¿Listo para la aventura?</h2>
+                <p class="reserva-sub">Ready for the adventure?</p>
+            </div>
+            <form class="formulario-reserva">
+                <h3>Reservar Ahora</h3>
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="telefono">Teléfono / WhatsApp *</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="paquete">Paquete de aventura *</label>
+                    <select id="paquete" name="paquete" required>
+                        <option value="">Selecciona un paquete</option>
+                        <option value="parapente">Parapente Mesa de Ruitoque — $180.000</option>
+                        <option value="rafting">Rafting Río Suárez — $120.000</option>
+                        <option value="chicamocha">Cañón Chicamocha + Panachi — $150.000</option>
+                        <option value="cueva">Espeleología Cueva del Indio — $90.000</option>
+                        <option value="barichara">Trekking Camino Real Barichara — $80.000</option>
+                        <option value="extremo">Paquete Extremo 1 — $650.000</option>
+                        <option value="extremo2">Paquete Extremo 2 — $290.000</option>
+                        <option value="extremo3">Paquete Extremo 3 — $420.000</option>
+                    </select>
+                </div>
+                <div class="fila-campo">
+                    <div class="grupo-campo">
+                        <label for="fecha">Fecha *</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="personas">N° de personas *</label>
+                        <input type="number" id="personas" name="personas" min="1" max="20" placeholder="1" required>
+                    </div>
+                </div>
+                <div class="grupo-campo">
+                    <label for="mensaje">Mensaje adicional</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="¿Alguna pregunta o necesidad especial?"></textarea>
+                </div>
+                <button type="submit" class="btn-reservar">¡RESERVAR AHORA!</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- INFORMACIÓN PRÁCTICA -->
+    <section class="info-util">
+        <h2 class="titulo-info">Información Práctica</h2>
+        <p class="subtitulo-info">What to know before you go</p>
+        <div class="contenedor-info">
+            <div class="bloque-info">
+                <h3>¿Qué llevar?</h3>
+                <ul>
+                    <li>Ropa cómoda y deportiva</li>
+                    <li>Zapatos con buen agarre</li>
+                    <li>Protector solar y repelente</li>
+                    <li>Botella de agua (mínimo 1L)</li>
+                    <li>Documento de identidad</li>
+                    <li>Snack energético</li>
+                </ul>
+            </div>
+            <div class="bloque-info">
+                <h3>Recomendaciones</h3>
+                <ul>
+                    <li>Llegar 15 minutos antes</li>
+                    <li>Hidratarse bien el día anterior</li>
+                    <li>No consumir alcohol antes</li>
+                    <li>Avisar condiciones médicas</li>
+                    <li>Todo el equipo de seguridad incluido</li>
+                    <li>Menores de 12 años consultar</li>
+                </ul>
+            </div>
+            <div class="bloque-info">
+                <h3>Política de Cancelación</h3>
+                <ul>
+                    <li>Cancelación gratuita hasta 48h antes</li>
+                    <li>50% reembolso entre 24h y 48h</li>
+                    <li>Sin reembolso en menos de 24h</li>
+                    <li>Reprogramación sin costo con 24h de aviso</li>
+                    <li>Cancelación por mal clima: reembolso total</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="pie-pagina">
+        <div class="contenedor-pie">
+            <div class="columna-pie">
+                <div class="logo-pie">
+                    <img src="img/logo.png" alt="Santander Aventura" class="imagen-logo-pie">
+                    <span>Santander Aventura</span>
+                </div>
+                <p>Donde termina la rutina, empieza tu aventura. Turismo de aventura con corazón santandereano.</p>
+            </div>
+            <div class="columna-pie">
+                <h4>Aventuras</h4>
+                <ul class="lista-pie">
+                    <li><a href="#aventuras">Parapente</a></li>
+                    <li><a href="#aventuras">Rafting</a></li>
+                    <li><a href="#aventuras">Cañón del Chicamocha</a></li>
+                    <li><a href="#aventuras">Espeleología</a></li>
+                    <li><a href="#aventuras">Trekking Barichara</a></li>
+                    <li><a href="#aventuras">Paquete Extremo</a></li>
+                </ul>
+            </div>
+            <div class="columna-pie">
+                <h4>Contáctanos</h4>
+                <ul class="lista-pie">
+                    <li> santanderaventura@gmail.com</li>
+                    <li> +57 300 123 4567</li>
+                    <li> San Gil, Santander, Colombia</li>
+                </ul>
+                <div class="redes-sociales">
+                    <a href="#" class="red-social" aria-label="Instagram" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/" class="red-social" aria-label="Facebook" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" class="red-social" aria-label="YouTube" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+                    </a>
+                    <a href="https://wa.me/573001234567" class="red-social" aria-label="WhatsApp" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="fondo-pie">
+            <p>© 2026 Santander Aventura · Hecho con amor en Santander, Colombia · Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
 </html>
