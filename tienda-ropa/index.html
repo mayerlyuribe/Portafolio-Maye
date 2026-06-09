@@ -9,52 +9,60 @@
     </head>
 <body>
     <header>
-        <img src="img/icono-buscar.png" alt="lupa buscar">
+        <div class="busqueda">
+        <span class="material-symbols-outlined buscar">search</span>
         <label for="buscar">
             <input type="text" id="buscar" placeholder="Search products...">
         </label>
+        </div>
         <h1>oritina</h1>
-        <img src="img/wishlist.png" alt="deseos">
+        <div class="header-icons">
+        <span class="material-symbols-outlined icono-hearder">favorite</span>
         <p>WISHLIST</p>
-        <img src="img/carrito.png" alt="carrito">
+        <div class="carrito">
+        <span class="material-symbols-outlined icono-hearder">shopping_bag</span>
+        <p class="cantidad">1</p>
+        </div>
         <p>CARRITO</p>
-        <img src="img/menu.png" alt="menu">
+        <span class="material-symbols-outlined icono-hearder menu">menu</span>
+        </div>
     </header>
     <nav>
         <ul class="nav-links">
-            <li><a href="#home">HOME
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <li><a href="#home" class="link-nav">HOME </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
-                </svg>  
-                </a>          
+                </svg>        
             </li>
-            <li><a href="#page">PAGE
+            <li><a href="#page" class="link-nav">PAGE</a>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
                 </svg>
-                </a> 
             </li>
-            <li><a href="#blog">BLOG
+            <li><a href="#blog" class="link-nav">BLOG</a>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                     <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
                 </svg>
-                </a> 
             </li>
             <li>
-                <a href="#contact">CONTACT US</a>
+                <a href="#contact" class="link-nav">CONTACT US</a>
             </li>
         </ul>
     </nav>
     <section class="secc-colecciones">
         <div class="mujeres">
             <img class="imagen-coleccion" src="https://www.lazo.com.co/cdn/shop/files/CAMISETAMODIFICADA1_2.png?v=1739452423" alt="camisa-mujer">
-            <h2>WOMEN</h2>
-            <p>Summer Hotlist Collections</p>
+            <div class="info-coleccion">
+                <h2 class="titulo-coleccion">WOMEN</h2>
+                <p class="descripcion-coleccion">Summer Hotlist Collections</p>
+            </div>
         </div>
         <div class="hombres">
             <img class="imagen-coleccion" src="https://www.lazo.com.co/cdn/shop/files/CAMISETAMODIFICADA1_2.png?v=1739452423" alt="camisa-mujer">
-            <h2>MEN</h2>
-            <p>Summer Hotlist Collections</p>
+            <div class="info-coleccion">
+                <h2 class="titulo-coleccion">MEN STYLE</h2>
+                <p class="descripcion-coleccion">Summer Hotlist Collections</p>
+            </div>
         </div>
     </section>
     <section class="secc-marcas">
