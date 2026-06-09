@@ -227,7 +227,7 @@ header {
 }
 
 .parapente         { background-image: url(img/parapente01.png); }
-.rafting           { background-image: url(img/rafting.png); }
+.rafting           { background-image: url(img/Rafting.png); }
 .canon-chicamocha  { background-image: url(img/chicamocha.png); }
 .cueva             { background-image: url(img/cueva02.png); }
 .caminata-barichara{ background-image: url(img/caminata01.png); }
@@ -430,7 +430,7 @@ header {
 }
 
 .contenedor-videos {
-    width: min(100%, 1000px);
+    width: min(120%, 1200px);
     margin: 0 auto;
 }
 
@@ -441,7 +441,7 @@ header {
 }
 
 .video-grande {
-    width: 70%;
+    width: 75%;
     max-height: 32em;
     object-fit: cover;
     padding-top: 16px;
@@ -452,7 +452,8 @@ header {
 
 .info-video {
     padding: 16px 20px 20px;
-    text-align: center;
+    text-align: left;
+    padding-left:150px;
 }
 
 .info-video h3 {
@@ -460,6 +461,7 @@ header {
     font-size: clamp(1rem, 3vw, 2rem);
     margin: 10px 0 4px;
     color: white;
+    font-size: 18px;
 }
 
 .info-video p {
