@@ -30,6 +30,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    width: 100%;
 }
 
 h1 {
@@ -63,7 +64,7 @@ header {
 
 .logo {
     text-align: center;
-    padding-left: 65px;
+    padding-left: clamp(4px, 2vw, 65px);
 }
 
 .logo-img {
@@ -101,19 +102,21 @@ header {
 }
 
 .btn {
-    width: clamp(50px, 12vw, 130px);
-    height: clamp(20px, 6vw, 50px);
+    width: clamp(70px, 14vw, 130px);
+    height: clamp(28px, 6vw, 50px);
     border: none;
     border-radius: 16px;
     background-color: var(--color-principal);
     font-family: var(--fuente-principal);
     color:#fff;
-    font-size: clamp(0.6rem, 1.3vw, 1rem);
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
     cursor: pointer;
     transition: all 0.3s ease;
     white-space: nowrap;
-    margin-left:50px;
-    margin-right: 65px;
+    overflow: hidden;
+    padding: 0 4px;
+    margin-left: clamp(4px, 3vw, 50px);
+    margin-right: clamp(4px, 4vw, 65px);
 }
 
 .reservar:hover {
@@ -430,30 +433,34 @@ header {
 }
 
 .contenedor-videos {
-    width: min(120%, 1200px);
+    width: min(97%, 770px);
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 4vw, 40px);
 }
 
 .video-principal {
     border-radius: 20px;
     overflow: hidden;
     background-color: var(--oscuro-medio);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+     padding: clamp(12px, 2.4vw, 22px) clamp(20px, 4vw, 52px);
 }
 
 .video-grande {
-    width: 75%;
-    max-height: 32em;
+    width: 100%;
+    max-height: 400px;
     object-fit: cover;
-    padding-top: 16px;
-    border-radius: 20px;
-    overflow: hidden;
-
+    border-radius: 16px;
+    display: block;
 }
 
 .info-video {
-    padding: 16px 20px 20px;
+    padding: 0 8px 4px;
     text-align: left;
-    padding-left:150px;
 }
 
 .info-video h3 {
@@ -828,6 +835,9 @@ header {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 8px;
+    white-space: normal;
+    line-height: 1.3;
+    text-align: center;
 }
 
 .btn-reservar:hover {
@@ -1010,11 +1020,7 @@ header {
     margin: 0;
 }
 
-/* ========================================
-    MEDIA QUERIES — RESPONSIVIDAD
-   ======================================== */
-
-/* Tablet grande — 4 columnas a 2 */
+/* ========== MEDIA QUERIES ========== */
 @media (max-width: 1024px) {
     .barra {
         grid-template-columns: auto auto 1fr auto;
@@ -1029,6 +1035,9 @@ header {
     }
     .btn{
         margin:0;
+    }
+    .video-grande{
+        padding: 0;
     }
 }
 
@@ -1080,8 +1089,15 @@ header {
     }
 }
 
-/* Móvil */
+
 @media (max-width: 600px) {
+    .logo img{
+        margin: 10px 0px
+    }
+    .logo{
+        margin:0px;
+
+    }
     .barra ul {
         display: none;
     }
@@ -1089,6 +1105,7 @@ header {
     .barra {
         grid-template-columns: auto 1fr auto;
         display: grid;
+        padding: 8px 8px;
     }
 
     .barra h1 {
@@ -1127,8 +1144,15 @@ header {
     }
 }
 
-/* Móvil pequeño */
+
 @media (max-width: 420px) {
+    .logo{
+        padding: 0;
+    }
+    .logo-img {
+        width: 60px;
+        margin: 9px 0px ;
+    }
     .eslogan {
         font-size: clamp(0.85rem, 5vw, 1.1rem);
     }
@@ -1160,10 +1184,6 @@ header {
         height: clamp(110px, 40vw, 160px);
     }
 
-    .video-grande {
-        padding-top: 10px;
-    }
-
     .guia-contenedor {
         padding: 16px;
     }
@@ -1176,16 +1196,16 @@ header {
     }
 }
 
-/* Mínimo — 300px */
 @media (max-width: 340px) {
     .barra {
         grid-template-columns: auto 1fr auto;
-        padding: 6px 8px;
+        padding: 8px 4px;
         gap: 6px;
     }
 
     .logo-img {
-        width: 32px;
+        width: 40px;
+        margin: 10px 0px
     }
 
     .barra h1 {
@@ -1195,9 +1215,12 @@ header {
     .btn {
         width: 70px;
         height: 32px;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         border-radius: 10px;
         padding: 0 6px;
+        margin: 0;
+        white-space: normal;
+        line-height: 1.1;
     }
 
     .contenedor-video {
@@ -1236,7 +1259,7 @@ header {
 
     .btn-reservar {
         font-size: 11px;
-        padding: 10px;
+        padding: 10px 6px;
     }
 
     .bloque-info {

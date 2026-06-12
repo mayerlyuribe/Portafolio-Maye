@@ -156,7 +156,8 @@ a{
     justify-content: center;
 }
 .mujeres{
-    background-color: #0DC9C9;
+background: #22C1C3;
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 203, 204, 1) 100%);
     width: 100%;
     height: 100%;
     display: flex;
@@ -166,7 +167,8 @@ a{
     justify-content: center;
 }
 .hombres{
-    background-color: #039CCB;
+    background: #02A8CE;
+    background: linear-gradient(0deg, rgba(2, 168, 206, 1) 0%, rgba(3, 140, 199, 1) 100%);
     width: 100%;
     height: 100%;
     display: flex;
@@ -215,8 +217,10 @@ a{
     gap: 50px;
 }
 .logo-marca{
-    width: 80px;
+    width: 7%;
 }
+
+/* ------------------- SECCION COLECCIONES --------------- */
 .secc-productos{
     height: 83vh;
     width: 100%;
@@ -225,6 +229,33 @@ a{
     grid-template-columns: repeat(3, 1fr);
     align-items:center;
     color: #fff;
+}
+
+.producto{
+    width: 100%;
+    height: 100%;
+    padding-top:20px;
+}
+.camisa1{   
+    background: #FB6E5F;
+    background: linear-gradient(139deg, rgba(251, 110, 95, 1) 0%, rgba(229, 84, 67, 1) 50%);}
+.camisa2{
+    background: #FAA483;
+    background: linear-gradient(139deg, rgba(250, 164, 131, 1) 0%, rgba(254, 139, 99, 1) 50%);
+}
+.camisa3{
+    background: #FED77D;
+    background: linear-gradient(139deg, rgba(254, 215, 125, 1) 0%, rgba(254, 199, 66, 1) 50%);
+}
+.producto button{
+    width: 30%;
+    height: 50px;
+    color: #000;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight:600;
 }
 .imagen-producto{
     width: 70%;
