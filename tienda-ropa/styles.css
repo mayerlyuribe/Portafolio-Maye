@@ -184,15 +184,17 @@ a{
 }
 .titulo-coleccion{
     width: 100%;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family:'Times New Roman', Times, serif;
     color:#ffffff53;
+    text-align: center;
 }
 .descripcion-coleccion{
     font-size: 1.5em;
     font-family: 'Comic Relief';
     position:absolute;
-    top:30px;
+    top:50%;
+    transform: translateY(-50%);
 }
 .secc-colecciones div{
     width:50%;
