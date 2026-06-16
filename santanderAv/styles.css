@@ -127,7 +127,7 @@ header {
 /* ========== VIDEO HERO ========== */
 .contenedor-video {
     width: 100%;
-    height: clamp(300px, 60vw, 700px);
+    height:100vh;
     display: grid;
     overflow: hidden;
 }
@@ -230,7 +230,7 @@ header {
 }
 
 .parapente         { background-image: url(img/parapente01.png); }
-.rafting           { background-image: url(img/Rafting.png); }
+.rafting           { background-image: url(img/cacorrada0.png); }
 .canon-chicamocha  { background-image: url(img/chicamocha.png); }
 .cueva             { background-image: url(img/cueva02.png); }
 .caminata-barichara{ background-image: url(img/caminata01.png); }
@@ -433,26 +433,25 @@ header {
 }
 
 .contenedor-videos {
-    width: min(97%, 770px);
+    width: min(97%, 1790px);
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: clamp(24px, 4vw, 40px);
+    display: grid;
+    grid-template-columns: auto auto ;
 }
 
 .video-principal {
     border-radius: 20px;
     overflow: hidden;
     background-color: var(--oscuro-medio);
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-     padding: clamp(12px, 2.4vw, 22px) clamp(20px, 4vw, 52px);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 23px;
+    padding: clamp(12px, 2.4vw, 22px) clamp(20px, 4vw, 52px);
 }
 
 .video-grande {
     width: 100%;
-    max-height: 400px;
+    height: 80%;
     object-fit: cover;
     border-radius: 16px;
     display: block;
@@ -475,7 +474,7 @@ header {
     font-family: var(--fuente-secundaria);
     font-size: clamp(12px, 1.8vw, 15px);
     color: #aaa;
-    margin: 0;
+    margin: 0px 0px 11px 0px;
 }
 
 /* ========== GUÍAS ========== */
@@ -510,8 +509,11 @@ header {
     background: linear-gradient(135deg, #f0fff6, #e8f8f0);
     border-radius: 24px;
     padding: clamp(20px, 4vw, 40px);
+    margin-bottom:50px;
 }
-
+.alexa{
+    grid-template-columns: 1.5fr 1fr;
+}
 .guia-foto-contenedor {
     display: flex;
     flex-direction: column;
@@ -706,6 +708,96 @@ header {
 }
 
 .resena-destacada .resena-autor span { color: rgba(255,255,255,0.8); }
+
+@keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideLeft {
+    from { opacity: 0; transform: translateX(-40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeSlideRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+    0%   { transform: translateX(-200%); }
+    100% { transform: translateX(300%); }
+}
+
+.guia-contenedor {
+    animation: fadeSlideUp 1.2s ease both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 30%;
+}
+
+.guia-contenedor:not(.alexa) .guia-foto-contenedor {
+    animation: fadeSlideLeft 1.1s ease 0.4s both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+}
+
+.guia-contenedor:not(.alexa) .guia-info {
+    animation: fadeSlideRight 1.1s ease 0.4s both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+}
+
+.guia-contenedor.alexa .guia-foto-contenedor {
+    animation: fadeSlideRight 1.1s ease 0.4s both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+}
+
+.guia-contenedor.alexa .guia-info {
+    animation: fadeSlideLeft 1.1s ease 0.4s both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+}
+
+.guia-certificaciones span {
+    animation: fadeUp 0.8s ease both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+}
+
+.guia-certificaciones span:nth-child(1) { animation-delay: 0.8s; }
+.guia-certificaciones span:nth-child(2) { animation-delay: 1s; }
+.guia-certificaciones span:nth-child(3) { animation-delay: 1.2s; }
+.guia-certificaciones span:nth-child(4) { animation-delay: 1.4s; }
+
+.guia-img {
+    transition: transform 0.4s ease;
+}
+.guia-img:hover {
+    transform: scale(1.03);
+}
+
+.guia-insignia {
+    overflow: hidden;
+}
+
+.guia-insignia::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: translateX(-200%);
+}
+
+.guia-foto-contenedor:hover .guia-insignia::after {
+    animation: shimmer 0.5s ease forwards;
+}
 
 /* ========== FORMULARIO DE RESERVA ========== */
 .seccion-reserva {
@@ -1041,6 +1133,19 @@ header {
     }
 }
 
+@media (max-width: 909px) {
+    .contenedor-videos {
+        grid-template-columns: 1fr;
+        width: min(90%, 710px);
+    }
+
+     .video-principal {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+
 /* Tablet pequeña */
 @media (max-width: 768px) {
     .barra {
@@ -1184,6 +1289,10 @@ header {
         height: clamp(110px, 40vw, 160px);
     }
 
+    .contenedor-videos {
+        width: min(99%, 700px);
+    }
+
     .guia-contenedor {
         padding: 16px;
     }
@@ -1194,6 +1303,7 @@ header {
         font-size: 0.65rem;
         border-radius: 12px;
     }
+
 }
 
 @media (max-width: 340px) {
@@ -1287,4 +1397,16 @@ header {
         width: 140px;
         height: 100px;
     }
+
+    .video-principal{
+        padding: 0px 6px;
+    }
+    .video-principal{
+        padding:10px 6px 50px 0;
+    }
+    .info-video h3{
+        margin: 5px  0px 0px 0px;
+    }
+    .contenedor-videos{
+        width: 98%;    }
 }
