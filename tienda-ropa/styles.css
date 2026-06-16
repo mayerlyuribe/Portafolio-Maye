@@ -23,10 +23,14 @@ html{
 }
 :root{
     --color-primario: #0A1D21;
+    --color-fondo-claro: #fefeff;
+    --color-fondo-claro-secundario: #f8f8f8;
     --color-secundario: #ffcc00;
-    --color-reslatar:#ea6a20;
+    --color-reslatar:#cb8344;
     --color-fuente:#000;
     --color-fuente-secundario: #000000cf;
+    --color--boton-secundario: #252424;
+    --color-texto-fondo-oscuro: #ccc;
 }
 /* -------------- HEADER -------------- */
 header{
@@ -88,7 +92,7 @@ header input[type="text"]{
     font-size: 16px;
     padding-right: 20px;
     placeholder-shown {
-        color: #ccc;
+        color: var(--color-texto-fondo-oscuro);
     }
 }
 
@@ -106,6 +110,7 @@ nav{
     display:flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-fondo-claro);
 }
 
 ul{
@@ -144,7 +149,7 @@ nav a::before {
     transition: transform 0.2s ease;
 }
 nav a:hover::before {
-    transform: scaleX(1);  /* aparece al hover */
+    transform: scaleX(1);
 }
 
 a{
@@ -165,7 +170,6 @@ a{
     justify-content: center;
 }
 .mujeres{
-background: #22C1C3;
 background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 203, 204, 1) 100%);
     width: 100%;
     height: 100%;
@@ -176,7 +180,6 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 203, 204, 1)
     justify-content: center;
 }
 .hombres{
-    background: #02A8CE;
     background: linear-gradient(0deg, rgba(2, 168, 206, 1) 0%, rgba(3, 140, 199, 1) 100%);
     width: 100%;
     height: 100%;
@@ -217,7 +220,7 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 203, 204, 1)
 /* ----------------SECCION MARCAS ------------ */
 .secc-marcas{
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--color-fondo-claro);
     display:flex;
     align-items:center;
     color: #fff;
@@ -246,18 +249,15 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 203, 204, 1)
     right: 140px;
 }
 .camisa1{   
-    background: #FB6E5F;
     background: linear-gradient(139deg, rgba(251, 110, 95, 1) 0%, rgba(229, 84, 67, 1) 50%);}
 .camisa2{
-    background: #FAA483;
     background: linear-gradient(139deg, rgba(250, 164, 131, 1) 0%, rgba(254, 139, 99, 1) 50%);
 }
 .camisa3{
-    background: #FED77D;
     background: linear-gradient(139deg, rgba(254, 215, 125, 1) 0%, rgba(254, 199, 66, 1) 50%);
 }
 .producto button{
-    width: 30%;
+    padding:0 70px;
     height: 50px;
     color: #000;
     background-color: #f3f3f3;
@@ -266,19 +266,18 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 203, 204, 1)
     font-size: 13px;
     font-weight:600;
     margin-bottom:50px;
-
 }
+
 .imagen-producto{
     width: 70%;
     justify-self: center;
     padding-top: 50px;
 }
 .logo-nuevo{
-    width: 80px;
+    width: 75px;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 80px;
+    top: 30px;
+    left: 30px;
     opacity: 0.8;
 }
 .producto{
@@ -292,14 +291,10 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 203, 204, 1)
 }
 /* ----------- SECCION NUESTROS PRODUCTOS ---------------  */
 
-.nuestros-produtos h2{
-    padding-top:50px;
-    font-size: 2rem;
-}
-.descripcion-nuestros-productos{
+.descripcion-secc{
     color: var(--color-fuente-secundario);
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .filtro-camisas{
     display: flex;
@@ -315,15 +310,33 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 203, 204, 1)
     justify-content: space-evenly;
     margin: 0 auto;
 }
-.calificacion span{
-    font-size: 15px;}
+.grupo-camisetas > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 
+}
+.btn-cargar-mas{
+    height: 50px;
+    color: #f3f3f3;
+    background-color: var(--color--boton-secundario);
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight:600;
+    margin-bottom:50px;
+    padding:0 20px;
+    margin: 30px 0 80px 0;
+}
+.calificacion span{
+    font-size: 15px;
+}
 .nuestros-produtos{
     width: 100%;
-    background-color: #f3f3f3f3;
+    background-color: var(--color-fondo-claro);
     text-align: center;
 }
-
 .calificacion{
     display: flex;
     gap: 10px;
@@ -333,51 +346,84 @@ background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(7, 203, 204, 1)
 }
 
 .camisa-venta{
-    width: 50%;
+    width: 70%;
 }
 .precio{
     color:var(--color-reslatar);
     font-size: 1em;
 }
+.sub-titulo-secc{
+    font-size: 2.3rem;
+    padding-top: 50px;
+}
 
+/* ---------- SECCION INSTAGRAM ------------ */
+.secc-instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .fotos-instagram{
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    justify-content: stretch;
+    gap:5px;
+    padding: 20px 0 0 0;
 }
 .img-insta{
-    width:100%;
-    height: 70%;
+    max-width:100%;
+    object-fit: cover;
+    object-position: center;
+    overflow-y: hidden;
 }
 .secc-instagram{
     width: 100%;
-}
-
+    background-color: var(--color-fondo-claro-secundario);
+}   
+/* --------------- SECCION INFO --------------- */
 .secc-info{
-    height: 30vh;
     width: 100%;
-    background-color: #f3f3f3;
+    background-color: var(--color-fondo-claro);
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-evenly;
 }
 span.material-symbols-outlined.icono-info{ 
-    font-size: 100px;
+    font-size: 70px;
+    color:var(--color-reslatar);
+    font-weight: normal;
     font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
+        'FILL' 1,
+        'wght' 100,
+        'GRAD'-25,
         'opsz' 48;
 }   
 .info{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #f3f3f3;
+    width:100%;
+    gap: 10px;
+    padding: 50px 50px;
 }
+
+/* ------------------ SECCION FOOTER ---------------  */
 .secc-footer{
-    height: 50vh;
-    width: 100%;
     background-color: #0A1D21;
     color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px;
+}
+.info-pagina{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.info-pagina ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--color-texto-fondo-oscuro);
 }
