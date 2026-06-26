@@ -30,6 +30,9 @@ header{
     position: fixed;
     z-index: 100;
 }
+p{
+    line-height: 1.6;
+}
 h1{
     font-weight: 700;
 }
